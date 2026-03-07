@@ -1,4 +1,4 @@
-# EAE - Edge AI Environment — Overview & Usage // ######################
+# E.A.E - Edge AI-Environment — Overview & Usage // ######################
 ----------------------------------
 An ESP32-based smart environment monitoring and automation system with:
  - AI-driven decision making
