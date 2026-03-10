@@ -54,7 +54,9 @@ An ESP32-based smart environment monitoring and automation system with:
  - Predictor (trend forecasting)
  - AnomalyDetector (statistical deviation)
  - ActivityRecognizer (motion smoothing & noise rejection)
-> AI is the primary decision maker. If AI fails, is disabled, or outputs invalid data -> fallback logic takes over.  Manual override always has highest priority.
+> - AI is the primary decision maker.
+> - If AI fails, is disabled, or outputs invalid data -> fallback logic takes over.
+> - Manual override always has highest priority.
 
 ## Features // #####################################################
  ### Monitoring:
@@ -166,8 +168,8 @@ EAE - Edge AI Environment/        # Some are IDE/library artifacts
 
  #define CLOUD_ENDPOINT   "https://your-cloud-provider/api/event"
  ```
-> **AI retraining is required for configuration**
- **Fine-tune config.h for your actual environment/usage.**
+> - **AI retraining is required for configuration**
+> - **Fine-tune config.h for your actual environment/usage.**
 
 ## Cloud Setup (Railway) // ######################################
  #### Please refer to `cloud/README_cloud.md`
