@@ -1,0 +1,20 @@
+## FOR TESTING (commands)
+
+- Get current JSON snapshot
+GET http://<ESP_IP_OR_HOST>/data
+Accept: application/json
+
+- Download CSV (open in browser)
+GET http://<ESP_IP_OR_HOST>/csv
+
+- Manual override (set manual label)
+uses GET in your current server, adapt to POST if you change server
+GET http://<ESP_IP_OR_HOST>/override?value=1
+Accept: text/plain
+
+- Revoke manual override (auto)
+GET http://<ESP_IP_OR_HOST>/override?value=-1
+Accept: text/plain
+
+- Example curl
+curl "http://<ESP_IP_OR_HOST>/override?value=2"
