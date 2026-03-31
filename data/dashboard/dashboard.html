@@ -1,0 +1,84 @@
+<!-- /dashboard.html -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EAE - Edge AI Environment</title>
+
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>EAE - Edge AI Environment Live Dashboard</h1>
+    <div class="actions">
+      <a id="csvLink" class="btn" href="/csv" target="_blank">Download CSV</a>
+      <a id="aiToggleLink" class="btn" href="#" onclick="toggleAI()"> Toggling AI...</a>
+    </div>
+
+  </header>
+
+  <main class="container">
+    <section class="cards">
+      <div class="card">
+        <div class="card-title">Temp</div>
+        <div class="card-value" id="tempVal">— °C</div>
+        <div class="card-sub" id="avgTemp">avg —</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Humidity</div>
+        <div class="card-value" id="humVal">— %</div>
+        <div class="card-sub" id="avgHum">avg —</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Light (ADC)</div>
+        <div class="card-value" id="lightVal">—</div>
+        <div class="card-sub" id="avgLight">avg —</div>
+      </div>
+        <div class="card">
+        <div class="card-title">Motion</div>
+        <div class="card-value" id="motionVal">—</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Action</div>
+        <div class="card-value" id="actionVal">—</div>
+      </div>
+    </section>
+
+    <section class="charts">
+      <div class="chart-card">
+        <canvas id="tempChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <canvas id="humChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <canvas id="lightChart"></canvas>
+      </div>
+      <div class="chart-card small">
+        <canvas id="motionChart"></canvas>
+      </div>
+    </section>
+
+    <section class="controls">
+      <h3>Manual Label Control</h3>
+      <div class="label-buttons">
+        <button class="btn danger" onclick="setOverride(-1)">Auto</button>
+        <button class="btn" onclick="setOverride(0)">Label 0 — None</button>
+        <button class="btn" onclick="setOverride(1)">Label 1 — LED1</button>
+        <button class="btn" onclick="setOverride(2)">Label 2 — LED2</button>
+        <button class="btn" onclick="setOverride(3)">Label 3 — LED3/Buzzer</button>
+      </div>
+    </section>
+
+    <section class="log">
+      <h3>Recent Events</h3>
+      <div id="logArea" class="log-area">No data yet...</div>
+    </section>
+  </main>
+
+  <script src="dashboard.js?v=999"></script>
+</body>
+</html>
