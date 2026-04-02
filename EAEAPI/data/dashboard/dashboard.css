@@ -1,0 +1,154 @@
+/* /dashboard.css */
+
+:root{
+  --bg:#0f172a;
+  --card:#0b1220;
+  --muted:#9fb0c8;
+  --accent:#60a5fa;
+  --ok:#10b981;
+  --danger:#fb7185;
+  --glass:rgba(255,255,255,0.03);
+  --pad:14px;
+  --radius:10px;
+  --text:#e6eef8;
+}
+
+*{ box-sizing:border-box }
+
+body{
+  margin:0;
+  padding:18px;
+  font-family:Inter,system-ui,Segoe UI,Arial;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* top Bar */
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.topbar h1{
+  margin:0;
+  font-size:18px;
+}
+
+/* buttons */
+.btn{
+  background:var(--card);
+  color:var(--text);
+  padding:8px 12px;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.04);
+  cursor:pointer;
+  text-decoration:none;
+}
+
+.btn:hover{ opacity:.95 }
+.btn.danger{ background:var(--danger) }
+
+/* layouts */
+.container{
+  display:grid;
+  gap:12px;
+}
+
+.cards{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+/* cards */
+.card,
+.chart-card,
+.controls,
+.log{
+  background:var(--card);
+  border-radius:var(--radius);
+}
+
+.card{
+  padding:var(--pad);
+  min-width:160px;
+  flex:1;
+  box-shadow:0 6px 18px rgba(2,6,23,.6);
+}
+
+.card-title{
+  font-size:13px;
+  color:var(--muted);
+}
+
+.card-value{
+  font-size:20px;
+  margin-top:6px;
+}
+
+.card-sub{
+  font-size:12px;
+  margin-top:4px;
+  color:var(--muted);
+}
+
+/* charts */
+.charts{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.chart-card{
+  padding:12px;
+  min-height:180px;
+}
+
+.chart-card.small{
+  min-height:110px;
+}
+
+/* Controls */
+.controls{ padding:12px }
+
+.label-buttons{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:8px;
+}
+
+/* logs */
+.log{ padding:12px }
+
+.log-area{
+  max-height:200px;
+  overflow:auto;
+  padding:10px;
+  border-radius:8px;
+  background:var(--glass);
+  font-family:monospace;
+  font-size:13px;
+  color:var(--muted);
+}
+
+/* responsive */
+@media (max-width:900px){
+  .charts{ grid-template-columns:1fr }
+  .cards{ flex-direction:column }
+}
+
+/* canvas */
+canvas{
+  display:block;
+  width:100%!important;
+  height:100%!important;
+}
+
+.chartjs-render-monitor{
+  stroke:initial!important;
+  color:initial!important;
+}
