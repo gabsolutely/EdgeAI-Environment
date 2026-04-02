@@ -130,7 +130,7 @@ EAE - Edge AI Environment/        # Some are IDE/library artifacts
 │   ├── AnomalyDetector.h
 │   ├── ActivityRecognizer.h
 │   └── config.h
-├── node_modules/
+├── node_modules/     # ignored
 ├── src/
 │   ├── main.cpp
 │   ├── AIEngine.cpp
