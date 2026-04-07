@@ -4,7 +4,7 @@ An ESP32-based smart environment monitoring and automation system with:
  - AI-driven decision making
  - Mathematical + statistical fallbacks
  - Cloud logging (Railway / Node.js)
- - Local web dashboard (STA / AP)e
+ - Local web dashboard (STA / AP)
  - CSV data storage (SPIFFS)
 > This project is a next-generation evolution of ESPSmart-Environment, expanding into cloud, AI inference, anomaly detection, activity recognizer, and prediction.
 
