@@ -254,4 +254,5 @@ EAE - Edge AI Environment/        # Some are IDE/library artifacts
  - Due to sensor noise and multi-source data conflicts, LED3/Buzzer control is currently driven only by temperature, rather than a combined temperature–humidity rule.
  - The RGB LED operates exclusively under the fallback system and does not reflect AI decisions.
  - The ActivityRecognizer introduces a slight detection delay compared to the AI-based activity logic, caused by its sliding-window design and conservative noise filtering.
+ - Will link TikTok/Youtube documentation once finished.
  - Earlier versions experienced memory constraint issues with AI models leading to occasional crashes on the ESP32. These have been fixed with a custom patch.
