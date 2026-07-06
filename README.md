@@ -9,10 +9,10 @@ An ESP32-based smart environment monitoring and automation system with:
 > This project is a next-generation evolution of ESPSmart-Environment, expanding into cloud, AI inference, anomaly detection, activity recognizer, and prediction.
 
 ### Video Documentation // #########################################
-Part 1/4: [Core Decision Maker (Edge AI)](https://www.tiktok.com/@gab11912/video/7636827135646240021)
-Part 2/4: [Fallback System (Math & Statistics)](https://www.tiktok.com/@gab11912/video/7642400585408384276)
-Part 3/4: [Overall System](https://www.tiktok.com/@gab11912/video/7644638593314868501)
-Part 4/4: [Cloud Enabled Telemetry](https://www.tiktok.com/@gab11912/video/7646837234934598932)
+ - Part 1/4: [Core Decision Maker (Edge AI)](https://www.tiktok.com/@gab11912/video/7636827135646240021)
+ - Part 2/4: [Fallback System (Math & Statistics)](https://www.tiktok.com/@gab11912/video/7642400585408384276)
+ - Part 3/4: [Overall System](https://www.tiktok.com/@gab11912/video/7644638593314868501)
+ - Part 4/4: [Cloud Enabled Telemetry](https://www.tiktok.com/@gab11912/video/7646837234934598932)
 
 ## Table Of Contents // ############################################
  - Hardware Overview
